@@ -106,31 +106,5 @@
                 }
             }
         ]
-    },
-    {
-        "function": "set_custom_data",
-        "tag": "{team:1}",
-        "conditions": [
-            {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "team": "team1"
-                }
-            }
-        ]
-    },
-    {
-        "function": "set_custom_data",
-        "tag": "{team:2}",
-        "conditions": [
-            {
-                "condition": "entity_properties",
-                "entity": "this",
-                "predicate": {
-                    "team": "team2"
-                }
-            }
-        ]
     }
 ]
