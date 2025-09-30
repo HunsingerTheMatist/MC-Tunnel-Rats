@@ -16,7 +16,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "head": {
-                                                    "items": "#tr:helmets"
+                                                    "items": "#head_armor"
                                                 }
                                             }
                                         }
@@ -48,7 +48,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "chest": {
-                                                    "items": "#tr:chestplates"
+                                                    "items": "#chest_armor"
                                                 }
                                             }
                                         }
@@ -78,7 +78,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "legs": {
-                                                    "items": "#tr:leggings"
+                                                    "items": "#leg_armor"
                                                 }
                                             }
                                         }
@@ -108,7 +108,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "feet": {
-                                                    "items": "#tr:boots"
+                                                    "items": "#foot_armor"
                                                 }
                                             }
                                         }
@@ -157,7 +157,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "head": {
-                                                    "items": "#tr:helmets"
+                                                    "items": "#head_armor"
                                                 }
                                             }
                                         }
@@ -187,7 +187,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "chest": {
-                                                    "items": "#tr:chestplates"
+                                                    "items": "#chest_armor"
                                                 }
                                             }
                                         }
@@ -217,7 +217,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "legs": {
-                                                    "items": "#tr:leggings"
+                                                    "items": "#leg_armor"
                                                 }
                                             }
                                         }
@@ -247,7 +247,7 @@
                                         "predicate": {
                                             "equipment": {
                                                 "feet": {
-                                                    "items": "#tr:boots"
+                                                    "items": "#foot_armor"
                                                 }
                                             }
                                         }
