@@ -1,0 +1,12 @@
+{
+    "criteria": {
+        "recipe": {
+            "trigger": "location"
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "tr:netherite_upgrade_smithing_template"
+        ]
+    }
+}
