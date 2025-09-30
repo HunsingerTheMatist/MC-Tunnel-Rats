@@ -23,8 +23,8 @@ $data modify storage tr:tmp suffix set value "$(suffix)"
 function tr:game/ending/stats/display/update_recursive with storage tr:tmp
 
 # summon text display
-execute as @e[tag=tr.tmp_name,limit=1] run item modify entity @s weapon.mainhand tr:page_to_lore
-execute as @e[tag=tr.tmp_name,limit=1] run data modify storage tr:tmp stat set from entity @s HandItems[0].components."minecraft:lore"[]
+execute as @n[tag=tr.tmp_name] run item modify entity @s weapon.mainhand tr:page_to_lore
+execute as @n[tag=tr.tmp_name] run data modify storage tr:tmp stat set from entity @s HandItems[0].components."minecraft:lore"[]
 
-$execute as @e[tag=tr.tmp_name,limit=1] run summon text_display $(x) $(y) $(z) { text: '{"nbt": "stat", "storage": "tr:tmp", "interpret": true}', alignment: "center", billboard: "vertical", view_range: 0.1f, brightness: {block: 15, sky: 15}, Tags:["stat.display"]}
-# execute as @e[tag=tr.tmp_name,limit=1] run tellraw @a {"nbt": "HandItems[0].components.\"minecraft:lore\"[]", "entity": "@s", "interpret": true}
+$execute as @n[tag=tr.tmp_name] run summon text_display $(x) $(y) $(z) { text: '{"nbt": "stat", "storage": "tr:tmp", "interpret": true}', alignment: "center", billboard: "vertical", view_range: 0.1f, brightness: {block: 15, sky: 15}, Tags:["stat.display"]}
+# execute as @n[tag=tr.tmp_name] run tellraw @a {"nbt": "HandItems[0].components.\"minecraft:lore\"[]", "entity": "@s", "interpret": true}

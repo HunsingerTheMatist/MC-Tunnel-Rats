@@ -11,9 +11,9 @@ scoreboard players set #totalX tmp 7
 # execute store result storage tr:tmp newSetup.base.y int 1 run function util:string_to_int with storage tr:tmp
 # data modify storage tr:tmp input set string block ~1 ~ ~ front_text.messages[2] 1 -1
 # execute store result storage tr:tmp newSetup.base.z int 1 run function util:string_to_int with storage tr:tmp
-execute store result storage tr:tmp newSetup.base.x int 1 positioned ~1 ~ ~ align xyz run scoreboard players get @e[limit=1,type=text_display,tag=admin.base,dx=1,dy=0,dz=0] x
-execute store result storage tr:tmp newSetup.base.y int 1 positioned ~1 ~ ~ align xyz run scoreboard players get @e[limit=1,type=text_display,tag=admin.base,dx=1,dy=0,dz=0] y
-execute store result storage tr:tmp newSetup.base.z int 1 positioned ~1 ~ ~ align xyz run scoreboard players get @e[limit=1,type=text_display,tag=admin.base,dx=1,dy=0,dz=0] z
+execute store result storage tr:tmp newSetup.base.x int 1 positioned ~1 ~ ~ align xyz run scoreboard players get @n[type=text_display,tag=admin.base,dx=1,dy=0,dz=0] x
+execute store result storage tr:tmp newSetup.base.y int 1 positioned ~1 ~ ~ align xyz run scoreboard players get @n[type=text_display,tag=admin.base,dx=1,dy=0,dz=0] y
+execute store result storage tr:tmp newSetup.base.z int 1 positioned ~1 ~ ~ align xyz run scoreboard players get @n[type=text_display,tag=admin.base,dx=1,dy=0,dz=0] z
 
 # limit base dimensions to maximums and minimums (1..99)
 execute store result score #tmp tmp run data get storage tr:tmp newSetup.base.x 1

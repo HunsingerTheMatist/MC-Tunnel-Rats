@@ -5,4 +5,4 @@ execute if score #loading tmp matches 0 run function tr:lobby/admin/update_previ
 scoreboard players operation #total tmp = @s x
 scoreboard players operation #total tmp *= @s y
 scoreboard players operation #total tmp *= @s z
-data modify entity @e[tag=admin.value,type=text_display,limit=1,sort=nearest] text set value '[{"translate":"tr.text.admin.slice.size", "with":[{"score":{"name": "#total", "objective": "tmp"}}]}]'
+data modify entity @n[tag=admin.value,type=text_display] text set value '[{"translate":"tr.text.admin.slice.size", "with":[{"score":{"name": "#total", "objective": "tmp"}}]}]'

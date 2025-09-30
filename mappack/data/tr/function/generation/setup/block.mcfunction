@@ -15,7 +15,7 @@ execute unless block ~ ~ ~ #tr:generation_special if score #isBlockEntity tmp ma
 execute unless block ~ ~ ~ #tr:generation_special unless score #isBlockEntity tmp matches 1 run function tr:generation/setup/break_block
 
 # get percentage if there is one
-execute if score #y tmp matches ..10 store result storage tr:tmp block.p float 0.01 positioned ~1 ~ ~ align xyz run scoreboard players get @e[limit=1,type=text_display,tag=admin.block,dx=1,dy=0,dz=0] p
+execute if score #y tmp matches ..10 store result storage tr:tmp block.p float 0.01 positioned ~1 ~ ~ align xyz run scoreboard players get @n[type=text_display,tag=admin.block,dx=1,dy=0,dz=0] p
 
 # copy value
 data modify storage tr:tmp section.blocks append from storage tr:tmp block

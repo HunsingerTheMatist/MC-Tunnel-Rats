@@ -14,7 +14,7 @@ execute store result score #globalX tmp run data get storage tr:gen template.bas
 execute store result score #globalY tmp run data get storage tr:gen template.base.y
 execute store result score #globalZ tmp run data get storage tr:gen template.base.z
 
-execute as @e[type=marker,tag=tr.gen,limit=1] at @s run function tr:generation/generation/section
+execute as @n[type=marker,tag=tr.gen] at @s run function tr:generation/generation/section
 
 execute store result score #totalX tmp run data get storage tr:gen template.totalX
 

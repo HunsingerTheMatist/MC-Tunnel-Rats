@@ -18,9 +18,9 @@ summon item_display ~ ~.2 ~0.3 {item:{id:"minecraft:stick",count:1b,components:{
 
 execute as @e[type=item_display,distance=..1.5,tag=admin.interaction] run data merge entity @s {transformation: {left_rotation: [0.0f, 0.70710677f, 0.0f, -0.70710677f], translation: [0.011f, 0.075f, 0.0f], scale: [0.15f, 0.15f, 0.15f]}}
 
-scoreboard players operation #total tmp = @e[tag=admin.base,limit=1,sort=nearest] x
-scoreboard players operation #total tmp *= @e[tag=admin.base,limit=1,sort=nearest] y
-scoreboard players operation #total tmp *= @e[tag=admin.base,limit=1,sort=nearest] z
+scoreboard players operation #total tmp = @n[tag=admin.base] x
+scoreboard players operation #total tmp *= @n[tag=admin.base] y
+scoreboard players operation #total tmp *= @n[tag=admin.base] z
 scoreboard players operation #total tmp *= @s p
 scoreboard players operation #total tmp /= 10000 const
 summon text_display ~ ~.1 ~0.51 {text:'[{"translate":"tr.text.admin.slice.percentage", "with":[{"score":{"name": "#total", "objective": "tmp"}}]}]',transformation: {left_rotation: [0.0f, 0.70710677f, 0.0f, 0.70710677f], translation: [0.02f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [0.3f, 0.3f, 0.3f]}, Tags:["admin.interaction","admin.value"]}

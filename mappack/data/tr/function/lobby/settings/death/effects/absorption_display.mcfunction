@@ -1,15 +1,15 @@
 # display entities
-execute if score #death.effect.absorption settings matches 0 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon,tag=!settings.overlay] item.components."minecraft:custom_model_data".floats[0] set value 271f
-execute if score #death.effect.absorption settings matches 1 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon,tag=!settings.overlay] item.components."minecraft:custom_model_data".floats[0] set value 27f
+execute if score #death.effect.absorption settings matches 0 run data modify entity @n[type=item_display,tag=settings.icon,tag=!settings.overlay] item.components."minecraft:custom_model_data".floats[0] set value 271f
+execute if score #death.effect.absorption settings matches 1 run data modify entity @n[type=item_display,tag=settings.icon,tag=!settings.overlay] item.components."minecraft:custom_model_data".floats[0] set value 27f
 
-execute if score #death.effect.absorption settings matches 0 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon.lvl] item.components."minecraft:custom_model_data".floats[0] set value 6f
-execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.strength settings matches 0 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon.lvl] item.components."minecraft:custom_model_data".floats[0] set value 1001f
-execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.strength settings matches 1 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon.lvl] item.components."minecraft:custom_model_data".floats[0] set value 1002f
+execute if score #death.effect.absorption settings matches 0 run data modify entity @n[type=item_display,tag=settings.icon.lvl] item.components."minecraft:custom_model_data".floats[0] set value 6f
+execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.strength settings matches 0 run data modify entity @n[type=item_display,tag=settings.icon.lvl] item.components."minecraft:custom_model_data".floats[0] set value 1001f
+execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.strength settings matches 1 run data modify entity @n[type=item_display,tag=settings.icon.lvl] item.components."minecraft:custom_model_data".floats[0] set value 1002f
 
-execute if score #death.effect.absorption settings matches 0 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 6f
-execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.duration settings matches 0 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 1003f
-execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.duration settings matches 1 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 1004f
-execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.duration settings matches 2 run data modify entity @e[type=item_display,limit=1,sort=nearest,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 1005f
+execute if score #death.effect.absorption settings matches 0 run data modify entity @n[type=item_display,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 6f
+execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.duration settings matches 0 run data modify entity @n[type=item_display,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 1003f
+execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.duration settings matches 1 run data modify entity @n[type=item_display,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 1004f
+execute if score #death.effect.absorption settings matches 1 if score #death.effect.absorption.duration settings matches 2 run data modify entity @n[type=item_display,tag=settings.icon.duration] item.components."minecraft:custom_model_data".floats[0] set value 1005f
 
 # tellraw
 scoreboard players set #d tmp 10
