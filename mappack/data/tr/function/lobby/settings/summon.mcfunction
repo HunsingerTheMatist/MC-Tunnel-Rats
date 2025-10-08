@@ -1,3 +1,4 @@
+execute as @e[type=interaction,tag=settings.icon] on passengers run kill @s
 kill @e[type=item_display,tag=settings.bg]
 kill @e[type=item_display,tag=settings.icon]
 kill @e[type=text_display,tag=settings.arena]

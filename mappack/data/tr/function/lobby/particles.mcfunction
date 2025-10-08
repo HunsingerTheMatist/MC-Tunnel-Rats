@@ -23,7 +23,7 @@ particle minecraft:white_ash -3 140 0 8 8 8 0 15
 
 # border particles
 scoreboard players add #admin.barrier timer 1
-execute if score #admin.barrier timer matches 40 as @e[tag=admin.barrier] run data merge entity @s {transformation:{translation:[-0.5f, -1.595f, 0.02f]}}
-execute if score #admin.barrier timer matches 41.. as @e[tag=admin.barrier] run data merge entity @s {transformation:{translation:[-0.5f, -0.595f, 0.02f]},interpolation_duration:40, start_interpolation:0}
+execute if score #admin.barrier timer matches 40 as @e[tag=admin.barrier] run data merge entity @s {transformation:{translation:[-0.5f, -1.595f, 0.02f]},interpolation_duration:0}
+execute if score #admin.barrier timer matches 41.. as @e[tag=admin.barrier] run data merge entity @s {transformation:{translation:[-0.5f, -0.595f, 0.02f]},interpolation_duration:40}
 execute if score #admin.barrier timer matches 41.. run scoreboard players set #admin.barrier timer 0
 
