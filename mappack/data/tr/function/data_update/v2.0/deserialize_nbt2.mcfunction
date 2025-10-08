@@ -1,0 +1,1 @@
+$data modify storage $(location) $(nbt_path) set value $(nbt)

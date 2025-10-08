@@ -7,5 +7,5 @@ execute if score #gr.firespread settings matches 1 run data modify entity @n[typ
 execute if score #gr.firespread settings matches 0 run gamerule doFireTick false
 execute if score #gr.firespread settings matches 1 run gamerule doFireTick true
 
-execute if score #gr.firespread settings matches 0 run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.fire_spread"}, " ", {"translate":"tr.text.setting.instruction.disabled", "color":"dark_red"}]
-execute if score #gr.firespread settings matches 1 run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.fire_spread"}, " ", {"translate":"tr.text.setting.instruction.enabled", "color":"dark_green"}]
+execute if score #gr.firespread settings matches 0 run return run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.fire_spread"}, " ", {"translate":"tr.text.setting.instruction.disabled", "color":"dark_red"}]
+execute if score #gr.firespread settings matches 1 run return run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.fire_spread"}, " ", {"translate":"tr.text.setting.instruction.enabled", "color":"dark_green"}]

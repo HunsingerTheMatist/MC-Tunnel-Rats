@@ -7,5 +7,5 @@ execute if score #gr.announceadvancements settings matches 1 run data modify ent
 execute if score #gr.announceadvancements settings matches 0 run gamerule announceAdvancements false
 execute if score #gr.announceadvancements settings matches 1 run gamerule announceAdvancements true
 
-execute if score #gr.announceadvancements settings matches 0 run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.advancements"}, " ", {"translate":"tr.text.setting.instruction.disabled", "color":"dark_red"}]
-execute if score #gr.announceadvancements settings matches 1 run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.advancements"}, " ", {"translate":"tr.text.setting.instruction.enabled", "color":"dark_green"}]
+execute if score #gr.announceadvancements settings matches 0 run return run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.advancements"}, " ", {"translate":"tr.text.setting.instruction.disabled", "color":"dark_red"}]
+execute if score #gr.announceadvancements settings matches 1 run return run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.advancements"}, " ", {"translate":"tr.text.setting.instruction.enabled", "color":"dark_green"}]

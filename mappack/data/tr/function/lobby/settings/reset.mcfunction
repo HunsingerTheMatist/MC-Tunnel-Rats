@@ -34,7 +34,7 @@ scoreboard players set #team.trims settings 1
 
 # sync the display entities to the new settings
 scoreboard players set #interaction tmp 0
-execute as @e[type=interaction,tag=settings.icon,tag=!c7,tag=!c9,tag=!e7,tag=!e9] at @s run function tr:lobby/settings/interact/found_entity
+execute as @e[type=interaction,tag=settings.icon,tag=!settings.map.prev,tag=!settings.map.next,tag=!settings.team.color1,tag=!settings.team.color2] at @s run function tr:lobby/settings/interact/found_entity
 
 # reset reset trigger
 execute as @a run trigger reset_settings set 0

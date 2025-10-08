@@ -7,5 +7,5 @@ execute if score #gr.mobspawning settings matches 1 run data modify entity @n[ty
 execute if score #gr.mobspawning settings matches 0 run gamerule doMobSpawning false
 execute if score #gr.mobspawning settings matches 1 run gamerule doMobSpawning true
 
-execute if score #gr.mobspawning settings matches 0 run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.mob_spawning"}, " ", {"translate":"tr.text.setting.instruction.disabled", "color":"dark_red"}]
-execute if score #gr.mobspawning settings matches 1 run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.mob_spawning"}, " ", {"translate":"tr.text.setting.instruction.enabled", "color":"dark_green"}]
+execute if score #gr.mobspawning settings matches 0 run return run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.mob_spawning"}, " ", {"translate":"tr.text.setting.instruction.disabled", "color":"dark_red"}]
+execute if score #gr.mobspawning settings matches 1 run return run tellraw @p[tag=interactor] [{"color":"gold", "translate":"tr.text.setting.instruction.mob_spawning"}, " ", {"translate":"tr.text.setting.instruction.enabled", "color":"dark_green"}]

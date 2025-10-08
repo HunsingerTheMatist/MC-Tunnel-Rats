@@ -3,58 +3,47 @@ data remove entity @s attack
 data remove entity @s interaction
 
 ## advert
-execute if entity @s[tag=advert] as @p[tag=interactor] run function tr:lobby/ad/interact
-execute if entity @s[tag=advert] run return 1
+execute if entity @s[tag=advert] as @p[tag=interactor] run return run function tr:lobby/ad/interact
 
 ## admin
-execute if entity @s[tag=admin.interaction] run function tr:lobby/admin/interactions/interact/found_entity
-execute if entity @s[tag=admin.interaction] run return 1
-execute if entity @s[tag=admin.menu] run function tr:lobby/admin/interactions/menu/found_entity
-execute if entity @s[tag=admin.menu] run return 1
+execute if entity @s[tag=admin.interaction] run return run function tr:lobby/admin/interactions/interact/found_entity
+execute if entity @s[tag=admin.menu] run return run function tr:lobby/admin/interactions/menu/found_entity
 
 ## settings
-execute if entity @s[tag=a4] run function tr:lobby/settings/misc/netherite
-execute if entity @s[tag=a5] run function tr:lobby/settings/misc/coordinates
-execute if entity @s[tag=a6] run function tr:lobby/settings/misc/start_time
-execute if entity @s[tag=a7] run function tr:lobby/settings/misc/effects/night_vision
-execute if entity @s[tag=a8] run function tr:lobby/settings/misc/effects/haste
-execute if entity @s[tag=a9] run function tr:lobby/settings/misc/effects/speed
+execute if entity @s[tag=settings.misc.netherite] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/netherite
+execute if entity @s[tag=settings.misc.coords] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/coordinates
+execute if entity @s[tag=settings.misc.start_time] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/start_time
+execute if entity @s[tag=settings.misc.night_vision] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/effects/night_vision
+execute if entity @s[tag=settings.misc.haste] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/effects/haste
+execute if entity @s[tag=settings.misc.speed] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/effects/speed
 
-execute if entity @s[tag=b4] run function tr:lobby/settings/death/spectate_after_elimination
-execute if entity @s[tag=b5] run function tr:lobby/settings/death/effects/invisibility
-execute if entity @s[tag=b5l] run function tr:lobby/settings/death/effects/invisibility_duration
-# execute if entity @s[tag=b5r] run function tr:lobby/settings/death/effects/invisibility_strength
-execute if entity @s[tag=b6] run function tr:lobby/settings/death/respawn_time
-execute if entity @s[tag=b7] run function tr:lobby/settings/death/effects/absorption
-execute if entity @s[tag=b7l] run function tr:lobby/settings/death/effects/absorption_duration
-execute if entity @s[tag=b7r] run function tr:lobby/settings/death/effects/absorption_strength
-execute if entity @s[tag=b8] run function tr:lobby/settings/death/effects/resistance
-execute if entity @s[tag=b8l] run function tr:lobby/settings/death/effects/resistance_duration
-execute if entity @s[tag=b8r] run function tr:lobby/settings/death/effects/resistance_strength
-execute if entity @s[tag=b9] run function tr:lobby/settings/death/effects/strength
-execute if entity @s[tag=b9l] run function tr:lobby/settings/death/effects/strength_duration
-execute if entity @s[tag=b9r] run function tr:lobby/settings/death/effects/strength_strength
+execute if entity @s[tag=settings.death.spectate] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/spectate_after_elimination
+execute if entity @s[tag=settings.death.invis] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/invisibility
+execute if entity @s[tag=settings.death.invis.time] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/invisibility_time
+execute if entity @s[tag=settings.death.respawn_time] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/respawn_time
+execute if entity @s[tag=settings.death.absorption] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/absorption
+execute if entity @s[tag=settings.death.absorption.time] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/absorption_time
+execute if entity @s[tag=settings.death.absorption.lvl] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/absorption_lvl
+execute if entity @s[tag=settings.death.resistance] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/resistance
+execute if entity @s[tag=settings.death.resistance.time] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/resistance_time
+execute if entity @s[tag=settings.death.resistance.lvl] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/resistance_lvl
+execute if entity @s[tag=settings.death.strength] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/strength
+execute if entity @s[tag=settings.death.strength.time] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/strength_time
+execute if entity @s[tag=settings.death.strength.lvl] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/death/effects/strength_lvl
 
-execute if entity @s[tag=d4] run function tr:lobby/settings/gamerule/naturalregeneration
-execute if entity @s[tag=d5] run function tr:lobby/settings/gamerule/mobspawning
-execute if entity @s[tag=d6] run function tr:lobby/settings/gamerule/firespread
-execute if entity @s[tag=d7] run function tr:lobby/settings/gamerule/keepinventory
-execute if entity @s[tag=d8] run function tr:lobby/settings/gamerule/announceadvancements
-# execute if entity @s[tag=d9] run function tr:lobby/settings/gamerule/immediaterespawn
+execute if entity @s[tag=game.start] on passengers if entity @s[type=item_display] run return run function tr:game/start
+execute if entity @s[tag=settings.reset_check] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/reset_check
+execute if entity @s[tag=settings.map.prev] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/offset {map_offset: -1}
+execute if entity @s[tag=settings.map.info] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/info
+execute if entity @s[tag=settings.map.next] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/offset {map_offset: 1}
 
-# execute if entity @s[tag=e4] run function tr:lobby/settings/team/
-execute if entity @s[tag=e5] run function tr:lobby/settings/team/armortrim
-# execute if entity @s[tag=e6] run function tr:lobby/settings/team/
-execute if entity @s[tag=e7] run function tr:lobby/settings/team/color1
-execute if entity @s[tag=e8] run function tr:lobby/settings/team/mode
-execute if entity @s[tag=e9] run function tr:lobby/settings/team/color2
+execute if entity @s[tag=settings.gamerule.naturalregen] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/gamerule/naturalregeneration
+execute if entity @s[tag=settings.gamerule.mobspawning] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/gamerule/mobspawning
+execute if entity @s[tag=settings.gamerule.firespread] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/gamerule/firespread
+execute if entity @s[tag=settings.gamerule.keepinventory] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/gamerule/keepinventory
+execute if entity @s[tag=settings.gamerule.advancements] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/gamerule/announceadvancements
 
-# execute if entity @s[tag=c4] run function tr:lobby/settings/
-execute if entity @s[tag=c5] run function tr:game/start
-execute if entity @s[tag=c6] run function tr:lobby/settings/reset_check
-execute if entity @s[tag=c7] run scoreboard players set #interaction tmp 1
-execute if entity @s[tag=c7] run function tr:lobby/settings/map/next
-execute if entity @s[tag=c9] run scoreboard players set #interaction tmp -1
-execute if entity @s[tag=c9] run function tr:lobby/settings/map/next
-
-execute if entity @s[tag=c8] run function tr:lobby/settings/map/info
+execute if entity @s[tag=settings.team.armortrim] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/team/armortrim
+execute if entity @s[tag=settings.team.color1] run return run function tr:lobby/settings/team/color1
+execute if entity @s[tag=settings.team.fillmode] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/team/mode
+execute if entity @s[tag=settings.team.color2] run return run function tr:lobby/settings/team/color2
