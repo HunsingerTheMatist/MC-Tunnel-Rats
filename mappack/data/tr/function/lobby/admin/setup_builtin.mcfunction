@@ -1,26 +1,13 @@
-data modify storage tr:settings arenas[{"name":"HermitcraftS9"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"HermitcraftS9"}].info set value '[{"translate":"tr.text.arena.hermitcrafts9.info"}]'
-data modify storage tr:settings arenas[{"name":"TheOriginal2012"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"TheOriginal2012"}].info set value '[{"translate":"tr.text.arena.theoriginal2012.info"}]'
-data modify storage tr:settings arenas[{"name":"NoPlaceToHide"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"NoPlaceToHide"}].info set value '[{"translate":"tr.text.arena.noplacetohide.info"}]'
-data modify storage tr:settings arenas[{"name":"PotLuck"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"PotLuck"}].info set value '[{"translate":"tr.text.arena.potluck.info"}]'
-data modify storage tr:settings arenas[{"name":"BaseGame"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"BaseGame"}].info set value '[{"translate":"tr.text.arena.basegame.info"}]'
-data modify storage tr:settings arenas[{"name":"ArrowHead"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"ArrowHead"}].info set value '[{"translate":"tr.text.arena.arrowhead.info"}]'
-data modify storage tr:settings arenas[{"name":"AnvilUp"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"AnvilUp"}].info set value '[{"translate":"tr.text.arena.anvilup.info"}]'
-data modify storage tr:settings arenas[{"name":"TheBrewery"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"TheBrewery"}].info set value '[{"translate":"tr.text.arena.thebrewery.info"}]'
-data modify storage tr:settings arenas[{"name":"LowTechInfested"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"LowTechInfested"}].info set value '[{"translate":"tr.text.arena.lowtechinfested.info"}]'
-data modify storage tr:settings arenas[{"name":"NoJump"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"NoJump"}].info set value '[{"translate":"tr.text.arena.nojump.info"}]'
-data modify storage tr:settings arenas[{"name":"MobArena"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"MobArena"}].info set value '[{"translate":"tr.text.arena.mobarena.info"}]'
-data modify storage tr:settings arenas[{"name":"Barrels"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"Barrels"}].info set value '[{"translate":"tr.text.arena.barrels.info"}]'
-data modify storage tr:settings arenas[{"name":"TriCross"}].builtin set value true
-data modify storage tr:settings arenas[{"name":"TriCross"}].info set value '[{"translate":"tr.text.arena.tricross.info"}]'
+data modify storage tr:settings arenas[{"name":"HermitcraftS9"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.hermitcrafts9.info"}]}
+data modify storage tr:settings arenas[{"name":"TheOriginal2012"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.theoriginal2012.info"}]}
+data modify storage tr:settings arenas[{"name":"NoPlaceToHide"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.noplacetohide.info"}]}
+data modify storage tr:settings arenas[{"name":"PotLuck"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.potluck.info"}]}
+data modify storage tr:settings arenas[{"name":"BaseGame"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.basegame.info"}]}
+data modify storage tr:settings arenas[{"name":"ArrowHead"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.arrowhead.info"}]}
+data modify storage tr:settings arenas[{"name":"AnvilUp"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.anvilup.info"}]}
+data modify storage tr:settings arenas[{"name":"TheBrewery"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.thebrewery.info"}]}
+data modify storage tr:settings arenas[{"name":"LowTechInfested"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.lowtechinfested.info"}]}
+data modify storage tr:settings arenas[{"name":"NoJump"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.nojump.info"}]}
+data modify storage tr:settings arenas[{"name":"MobArena"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.mobarena.info"}]}
+data modify storage tr:settings arenas[{"name":"Barrels"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.barrels.info"}]}
+data modify storage tr:settings arenas[{"name":"TriCross"}] merge value {builtin: true, info: [{"translate":"tr.text.arena.tricross.info"}]}

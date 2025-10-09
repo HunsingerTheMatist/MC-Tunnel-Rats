@@ -8,7 +8,6 @@ tellraw @p[tag=interactor] [{"translate":"tr.text.admin.arena_deleted","color": 
 scoreboard players set #admin.dirty status 0
 function tr:lobby/admin/interactions/menu/delete_map with storage tr:admin map
 
-scoreboard players set #interaction tmp 0
 scoreboard players set #admin.dirty status -1
-function tr:lobby/admin/interactions/menu/next
+function tr:lobby/admin/interactions/menu/change_map {map_offset: 0}
 scoreboard players set #admin.delete.confirm timer 0

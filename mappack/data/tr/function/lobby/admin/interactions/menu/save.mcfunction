@@ -1,7 +1,6 @@
 # say save
 function tr:lobby/admin/interactions/menu/check/is_dirty
-execute if score #admin.dirty status matches 0 run tellraw @p[tag=interactor] [{"translate":"tr.text.admin.nothing_to_save","color": "gray"}]
-execute if score #admin.dirty status matches 0 run return 1
+execute if score #admin.dirty status matches 0 run return run tellraw @p[tag=interactor] [{"translate":"tr.text.admin.nothing_to_save","color": "gray"}]
 
 execute if score #admin.save.confirm timer matches ..0 run tellraw @p[tag=interactor] [{"translate":"tr.text.admin.confirm.save", "color": "red", "with": [{"nbt":"arena.name", "storage": "tr:admin"}]}, " ", {"translate":"tr.text.admin.timer","with":[{"translate":"tr.text.admin.confirm"}]}]
 execute if score #admin.save.confirm timer matches ..0 run function tr:lobby/admin/interactions/menu/check/disable
@@ -15,4 +14,4 @@ execute positioned -32 139 9 run function tr:generation/setup/parse_and_save
 scoreboard players set #admin.dirty status 0
 function tr:lobby/admin/interactions/menu/check/enable
 
-tellraw @p[tag=interactor] [{"translate":"tr.text.admin.arena_saved","color": "green", "with": [{"nbt":"arena.name", "storage": "tr:admin"}]}]
+tellraw @p[tag=interactor] [{"translate":"tr.text.admin.arena_saved", "color": "green", "with": [{"nbt":"arena.name", "storage": "tr:admin"}]}]

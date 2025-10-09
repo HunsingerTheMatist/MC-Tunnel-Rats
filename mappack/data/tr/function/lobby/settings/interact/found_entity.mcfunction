@@ -33,9 +33,9 @@ execute if entity @s[tag=settings.death.strength.lvl] on passengers if entity @s
 
 execute if entity @s[tag=game.start] on passengers if entity @s[type=item_display] run return run function tr:game/start
 execute if entity @s[tag=settings.reset_check] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/reset_check
-execute if entity @s[tag=settings.map.prev] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/offset {map_offset: -1}
+execute if entity @s[tag=settings.map.prev] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/change_map {map_offset: -1}
 execute if entity @s[tag=settings.map.info] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/info
-execute if entity @s[tag=settings.map.next] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/offset {map_offset: 1}
+execute if entity @s[tag=settings.map.next] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/map/change_map {map_offset: 1}
 
 execute if entity @s[tag=settings.gamerule.naturalregen] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/gamerule/naturalregeneration
 execute if entity @s[tag=settings.gamerule.mobspawning] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/gamerule/mobspawning

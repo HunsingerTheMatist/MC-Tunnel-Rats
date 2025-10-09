@@ -8,13 +8,15 @@ execute if score #r tmp matches 2 run return 0
 function tr:lobby/admin/interactions/menu/check/enable_all
 scoreboard players set #admin.dirty status 0
 
-scoreboard players operation #admin.map.selection status += #interaction tmp
+$execute if score 1 const matches $(map_offset) run scoreboard players add #admin.map.selection status 1
+$execute if score -1 const matches $(map_offset) run scoreboard players remove #admin.map.selection status 1
+
 execute store result score #total tmp run data get storage tr:settings arenas
 execute store result storage tr:admin map.id int 1 run scoreboard players operation #admin.map.selection status %= #total tmp
-function tr:lobby/admin/interactions/menu/next_map with storage tr:admin map
+function tr:lobby/admin/interactions/menu/change_stored_map with storage tr:admin map
 
-execute if data storage tr:admin arena.builtin as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value '{"nbt":"arena.name","storage":"tr:admin","color":"green"}'
-execute unless data storage tr:admin arena.builtin as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value '{"nbt":"arena.name","storage":"tr:admin","color":"yellow"}'
+execute if data storage tr:admin arena.builtin as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value [{"nbt":"arena.name","storage":"tr:admin","color":"green"}]
+execute unless data storage tr:admin arena.builtin as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value [{"nbt":"arena.name","storage":"tr:admin","color":"yellow"}]
 
 data modify storage tr:tmp load.arena set from storage tr:admin arena
 execute positioned -32 138 9 run function tr:generation/load/start
