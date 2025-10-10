@@ -45,10 +45,15 @@
     "tr.text.setting.team.join.spectator": "You'll be spectating next round.",
     "tr.text.setting.team.leave": "You left your team.",
 
+    "tr.text.setting.add_op": "[Click here to become an Operator]",
+    "tr.text.setting.is_now_op": "You are now an Operator.",
+    "tr.text.setting.not_op": "You are not an Operator and do not have permission to do this!",
+    
     "tr.text.setting.instruction.enabled": "Enabled",
     "tr.text.setting.instruction.disabled": "Disabled",
     "tr.text.setting.instruction.level": "Level %s",
 
+    "tr.text.setting.instruction.op_only": "Only operators can perform lobby actions.",
     "tr.text.setting.instruction.netherite": "%s is craftable via a %s.",
     "tr.text.setting.instruction.coordinates": "Displays your coordinates in the actionbar.",
     "tr.text.setting.instruction.start_time": "Time between arena generation and game start: %s seconds",

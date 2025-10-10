@@ -78,6 +78,7 @@ scoreboard players add #death.effect.strength.strength settings 0
 scoreboard players add #death.effect.strength.duration settings 0
 scoreboard players add #coordinates settings 0
 scoreboard players add #netherite settings 0
+scoreboard players add #op_only settings 0
 
 execute unless score #game.start.timer settings = #game.start.timer settings run scoreboard players set #game.start.timer settings 5
 execute unless score #death.respawn.timer settings = #death.respawn.timer settings run scoreboard players set #death.respawn.timer settings 5

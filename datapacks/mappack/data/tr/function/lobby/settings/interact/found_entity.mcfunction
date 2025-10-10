@@ -5,6 +5,9 @@ data remove entity @s interaction
 ## advert
 execute if entity @s[tag=advert] as @p[tag=interactor] run return run function tr:lobby/ad/interact
 
+## op-only check
+execute if score #op_only settings matches 1 unless entity @s[tag=settings.misc.op_only] unless entity @s[tag=settings.map.info] as @p[tag=interactor, tag=!is_op] run return run tellraw @s [{"translate":"tr.text.setting.not_op", "color": "red"}]
+
 ## admin
 execute if entity @s[tag=admin.interaction] run return run function tr:lobby/admin/interactions/interact/found_entity
 execute if entity @s[tag=admin.menu] run return run function tr:lobby/admin/interactions/menu/found_entity
@@ -12,6 +15,7 @@ execute if entity @s[tag=admin.menu] run return run function tr:lobby/admin/inte
 ## settings
 execute if entity @s[tag=settings.misc.netherite] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/netherite
 execute if entity @s[tag=settings.misc.coords] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/coordinates
+execute if entity @s[tag=settings.misc.op_only] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/op_only
 execute if entity @s[tag=settings.misc.start_time] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/start_time
 execute if entity @s[tag=settings.misc.night_vision] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/effects/night_vision
 execute if entity @s[tag=settings.misc.haste] on passengers if entity @s[type=item_display] run return run function tr:lobby/settings/misc/effects/haste

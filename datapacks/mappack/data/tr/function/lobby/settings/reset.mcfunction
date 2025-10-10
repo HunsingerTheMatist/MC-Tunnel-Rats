@@ -1,5 +1,6 @@
 scoreboard players set #netherite settings 1
 scoreboard players set #coordinates settings 0
+scoreboard players set #op_only settings 0
 scoreboard players set #game.start.timer settings 30
 scoreboard players set #effect.night_vision settings 0
 scoreboard players set #effect.haste settings 1

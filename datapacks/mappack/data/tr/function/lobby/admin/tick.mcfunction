@@ -1,5 +1,9 @@
 # remove all but one "admin" from the area
-execute as @p[x=-32,y=138,z=-10,dx=13,dy=12,dz=20,tag=adminArea] run function tr:lobby/admin/players/remove
+execute as @p[x=-32,y=138,z=-10,dx=13,dy=12,dz=20,tag=adminArea] run function tr:lobby/admin/players/remove_all_but_one
+
+# remove anyone who isn't an op if op-only mode is on
+execute if score #op_only settings matches 1 run tellraw @a[x=-32,y=138,z=-10,dx=13,dy=12,dz=20,tag=!is_op] [{"translate":"tr.text.setting.not_op", "color": "red"}]
+execute if score #op_only settings matches 1 as @a[x=-32,y=138,z=-10,dx=13,dy=12,dz=20,tag=!is_op] run function tr:lobby/admin/players/remove
 
 # if there isn't one chosen one, add one from the area
 execute unless entity @p[tag=adminArea] run tag @p[x=-32,y=138,z=-10,dx=13,dy=12,dz=20] add adminArea
