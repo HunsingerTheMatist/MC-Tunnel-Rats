@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "top": "tr:block/sack_top",
+        "bottom": "tr:block/sack_bot",
+        "side": "tr:block/spidereye"
+    }
+}

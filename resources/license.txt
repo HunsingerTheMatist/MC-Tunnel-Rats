@@ -1,0 +1,7 @@
+[ flint_block , ender_pearl_block ] GNU GENERAL PUBLIC LICENSE (C) https://www.curseforge.com/minecraft/mc-mods/architects-palette
+
+[ gunpowder_sack , carrot_crate, apple_crate ] Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+
+[ string_block , feather_block , chorus_block , leather_block , totem_of_undying_block ] Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) 
+
+[ bedrock ] https://vanillatweaks.net/terms/

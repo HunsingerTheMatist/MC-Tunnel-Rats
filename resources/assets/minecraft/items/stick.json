@@ -1,0 +1,902 @@
+{
+    "model": {
+        "type": "minecraft:range_dispatch",
+        "property": "minecraft:custom_model_data",
+        "index": 0,
+        "fallback": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/stick"
+        },
+        "entries": [
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/logo"
+                },
+                "threshold": 1
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/test1"
+                },
+                "threshold": 2
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/test2"
+                },
+                "threshold": 3
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/test3"
+                },
+                "threshold": 4
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/bg"
+                },
+                "threshold": 5
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/overlays/empty"
+                },
+                "threshold": 6
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/crown"
+                },
+                "threshold": 7
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/disabled"
+                },
+                "threshold": 8
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/1"
+                },
+                "threshold": 11
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/2"
+                },
+                "threshold": 12
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/3"
+                },
+                "threshold": 13
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/4"
+                },
+                "threshold": 14
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/5"
+                },
+                "threshold": 15
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/6"
+                },
+                "threshold": 16
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/7"
+                },
+                "threshold": 17
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/8"
+                },
+                "threshold": 18
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/9"
+                },
+                "threshold": 19
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/1"
+                },
+                "threshold": 21
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/2"
+                },
+                "threshold": 22
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/3"
+                },
+                "threshold": 23
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/4"
+                },
+                "threshold": 24
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/5"
+                },
+                "threshold": 25
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/6"
+                },
+                "threshold": 26
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/7"
+                },
+                "threshold": 27
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/8"
+                },
+                "threshold": 28
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/9"
+                },
+                "threshold": 29
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/1"
+                },
+                "threshold": 31
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/2"
+                },
+                "threshold": 32
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/3"
+                },
+                "threshold": 33
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/4"
+                },
+                "threshold": 34
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/5"
+                },
+                "threshold": 35
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/6"
+                },
+                "threshold": 36
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/7"
+                },
+                "threshold": 37
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/8"
+                },
+                "threshold": 38
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/c/9"
+                },
+                "threshold": 39
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/1"
+                },
+                "threshold": 41
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/2"
+                },
+                "threshold": 42
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/3"
+                },
+                "threshold": 43
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/4"
+                },
+                "threshold": 44
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/5"
+                },
+                "threshold": 45
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/6"
+                },
+                "threshold": 46
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/7"
+                },
+                "threshold": 47
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/8"
+                },
+                "threshold": 48
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/9"
+                },
+                "threshold": 49
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/1"
+                },
+                "threshold": 51
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/2"
+                },
+                "threshold": 52
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/3"
+                },
+                "threshold": 53
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/4"
+                },
+                "threshold": 54
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/5"
+                },
+                "threshold": 55
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/6"
+                },
+                "threshold": 56
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/7"
+                },
+                "threshold": 57
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/8"
+                },
+                "threshold": 58
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/9"
+                },
+                "threshold": 59
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/4b"
+                },
+                "threshold": 141
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/5b"
+                },
+                "threshold": 151
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/6a"
+                },
+                "threshold": 161
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/6b"
+                },
+                "threshold": 162
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/6c"
+                },
+                "threshold": 163
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/6d"
+                },
+                "threshold": 164
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/6e"
+                },
+                "threshold": 165
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/7b"
+                },
+                "threshold": 171
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/8b"
+                },
+                "threshold": 181
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/8c"
+                },
+                "threshold": 182
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/9b"
+                },
+                "threshold": 191
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/a/9c"
+                },
+                "threshold": 192
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/4b"
+                },
+                "threshold": 241
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/5b"
+                },
+                "threshold": 251
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/6a"
+                },
+                "threshold": 261
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/6b"
+                },
+                "threshold": 262
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/6c"
+                },
+                "threshold": 263
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/6d"
+                },
+                "threshold": 264
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/7b"
+                },
+                "threshold": 271
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/8b"
+                },
+                "threshold": 281
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/b/9b"
+                },
+                "threshold": 291
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/4b"
+                },
+                "threshold": 441
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/5b"
+                },
+                "threshold": 451
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/6b"
+                },
+                "threshold": 461
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/7b"
+                },
+                "threshold": 471
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/8b"
+                },
+                "threshold": 481
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/d/9b"
+                },
+                "threshold": 491
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/5b"
+                },
+                "threshold": 551
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/8a"
+                },
+                "threshold": 581
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/8b"
+                },
+                "threshold": 582
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/e/8c"
+                },
+                "threshold": 583
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/team1"
+                },
+                "threshold": 901
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/team2"
+                },
+                "threshold": 902
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/join"
+                },
+                "threshold": 903
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/leave"
+                },
+                "threshold": 904
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin"
+                },
+                "threshold": 905
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/how_to"
+                },
+                "threshold": 906
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/credits"
+                },
+                "threshold": 907
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/1"
+                },
+                "threshold": 911
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/2"
+                },
+                "threshold": 912
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/3"
+                },
+                "threshold": 913
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/4"
+                },
+                "threshold": 914
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/5"
+                },
+                "threshold": 915
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/6"
+                },
+                "threshold": 916
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/7"
+                },
+                "threshold": 917
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/8"
+                },
+                "threshold": 918
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/murals/team"
+                },
+                "threshold": 920
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/murals/left"
+                },
+                "threshold": 921
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/murals/right"
+                },
+                "threshold": 922
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/aa1"
+                },
+                "threshold": 931
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/aa2"
+                },
+                "threshold": 932
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/aa3"
+                },
+                "threshold": 933
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/instructions/aa4"
+                },
+                "threshold": 934
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/overlays/lvl0"
+                },
+                "threshold": 1000
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/overlays/lvl1"
+                },
+                "threshold": 1001
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/overlays/lvl2"
+                },
+                "threshold": 1002
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/overlays/d1"
+                },
+                "threshold": 1003
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/overlays/d2"
+                },
+                "threshold": 1004
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/settings/overlays/d3"
+                },
+                "threshold": 1005
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/plus"
+                },
+                "threshold": 1010
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/plusplus"
+                },
+                "threshold": 1011
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/minus"
+                },
+                "threshold": 1012
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/minusminus"
+                },
+                "threshold": 1013
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/import"
+                },
+                "threshold": 1020
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/help"
+                },
+                "threshold": 1021
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/export"
+                },
+                "threshold": 1022
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/delete"
+                },
+                "threshold": 1023
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/rename"
+                },
+                "threshold": 1024
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/new"
+                },
+                "threshold": 1025
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/save"
+                },
+                "threshold": 1026
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/save_as"
+                },
+                "threshold": 1027
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/confirm"
+                },
+                "threshold": 1028
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/admin/cancel"
+                },
+                "threshold": 1029
+            },
+            {
+                "model": {
+                    "type": "minecraft:model",
+                    "model": "tr:item/lobby/credits_return"
+                },
+                "threshold": 1100
+            }
+        ]
+    }
+}

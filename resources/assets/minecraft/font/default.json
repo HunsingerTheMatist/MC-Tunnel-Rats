@@ -1,0 +1,71 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "minecraft:misc/forcefield.png",
+            "height": 30,
+            "ascent": 30,
+            "chars": [ "\uE000" ]
+        },
+        {
+            "type": "space",
+            "advances": {"\uE001": -1}
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/en_us/a.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf01" ]
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/en_us/b.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf02" ]
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/en_us/d.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf03" ]
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/en_us/e.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf04" ]
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/es_es/a.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf05" ]
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/es_es/b.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf06" ]
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/es_es/d.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf07" ]
+        },
+        {
+            "type": "bitmap",
+            "file": "tr:settings/lang/es_es/e.png",
+            "height": 256,
+            "ascent": 0,
+            "chars": [ "\uEf08" ]
+        }
+    ]
+}

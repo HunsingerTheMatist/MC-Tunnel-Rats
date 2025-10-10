@@ -1,0 +1,6 @@
+{
+    "parent": "tr:item/settings/root",
+    "textures": {
+        "layer0": "tr:settings/d2"
+    }
+}

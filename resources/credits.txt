@@ -1,0 +1,15 @@
+Credits:
+Architect's Palette, GNU GENERAL PUBLIC LICENSE (C) https://www.curseforge.com/minecraft/mc-mods/architects-palette
+[ flint_block , ender_pearl_block ]
+
+Quark, Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License, https://www.curseforge.com/minecraft/mc-mods/quark
+[ gunpowder_sack , carrot_crate, apple_crate ]
+
+ChimeraDev, Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) , https://twitter.com/devchimera
+[ string_block , feather_block , chorus_block , leather_block , totem_of_undying_block , pack.png]
+
+Vanilla Tweaks: https://vanillatweaks.net/ - https://vanillatweaks.net/terms/
+[ bedrock ]
+
+This pack is not associated with Quark, Architect's Pallete, or Mojang.
+"Minecraft" is a trademark of Mojang Synergies AB, Mojang ©2009-2023
